@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249"
+        app:rowCount="3">
+
+        <Button
+            android:id="@+id/btn_0"
+            style="@style/PlayButton"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_1"
+            style="@style/PlayButton"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_2"
+            style="@style/PlayButton"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_3"
+            style="@style/PlayButton"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_4"
+            style="@style/PlayButton"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_5"
+            style="@style/PlayButton"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_6"
+            style="@style/PlayButton"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_7"
+            style="@style/PlayButton"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_8"
+            style="@style/PlayButton"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <EditText
+        android:id="@+id/game_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:inputType="textShortMessage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.267"
+        android:text="game status"/>
+
+    <Button
+        android:id="@+id/new_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_status" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
